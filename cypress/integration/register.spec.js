@@ -7,12 +7,6 @@ describe('Register test', () => {
         cy.url().should('eq', 'https://gallery-app.vivifyideas.com/');
         cy.get('.nav-link').eq(2).click();
         cy.url().should('eq', 'https://gallery-app.vivifyideas.com/register');
-        // cy.get('#first-name').type('Proba');
-        // cy.get('#last-name').type('Jedan');
-        // cy.get('#email').type('Proba@jedan.com');
-        // cy.get('#password').type('proba1234');
-        // cy.get('#password-confirmation').type('proba1234');
-        // cy.get('.form-check-input').eq(0).click();
         cy.get('button[type="submit"]').click();
     });
     
@@ -23,7 +17,6 @@ describe('Register test', () => {
         cy.url().should('eq', 'https://gallery-app.vivifyideas.com/register');
         cy.get('#first-name').type('Proba');
         cy.get('#last-name').type('Jedan');
-        // cy.get('#email').type('Proba@jedan.com');
         cy.get('#password').type('proba1234');
         cy.get('#password-confirmation').type('proba1234');
         cy.get('.form-check-input').eq(0).click();
@@ -35,7 +28,6 @@ describe('Register test', () => {
         cy.url().should('eq', 'https://gallery-app.vivifyideas.com/');
         cy.get('.nav-link').eq(2).click();
         cy.url().should('eq', 'https://gallery-app.vivifyideas.com/register');
-        // cy.get('#first-name').type('Proba');
         cy.get('#last-name').type('Jedan');
         cy.get('#email').type('Proba@jedan.com');
         cy.get('#password').type('proba1234');
@@ -50,7 +42,6 @@ describe('Register test', () => {
         cy.get('.nav-link').eq(2).click();
         cy.url().should('eq', 'https://gallery-app.vivifyideas.com/register');
         cy.get('#first-name').type('Proba');
-        // cy.get('#last-name').type('Jedan');
         cy.get('#email').type('Proba@jedan.com');
         cy.get('#password').type('proba1234');
         cy.get('#password-confirmation').type('proba1234');
@@ -66,7 +57,6 @@ describe('Register test', () => {
         cy.get('#first-name').type('Proba');
         cy.get('#last-name').type('Jedan');
         cy.get('#email').type('Proba@jedan.com');
-        // cy.get('#password').type('proba1234');
         cy.get('#password-confirmation').type('proba1234');
         cy.get('.form-check-input').eq(0).click();
         cy.get('button[type="submit"]').click();
@@ -80,7 +70,6 @@ describe('Register test', () => {
         cy.get('#last-name').type('Jedan');
         cy.get('#email').type('Proba@jedan.com');
         cy.get('#password').type('proba1234');
-        // cy.get('#password-confirmation').type('proba1234');
         cy.get('.form-check-input').eq(0).click();
         cy.get('button[type="submit"]').click();
     });
@@ -95,7 +84,6 @@ describe('Register test', () => {
         cy.get('#email').type('Proba@jedan.com');
         cy.get('#password').type('proba1234');
         cy.get('#password-confirmation').type('proba1234');
-        // cy.get('.form-check-input').eq(0).click();
         cy.get('button[type="submit"]').click();
     });
 
@@ -132,7 +120,6 @@ describe('Register test', () => {
         cy.url().should('eq', 'https://gallery-app.vivifyideas.com/');
         cy.get('.nav-link').eq(2).click();
         cy.url().should('eq', 'https://gallery-app.vivifyideas.com/register');
-        //cy.get('.form-control').eq(1).click();
         cy.get('#first-name').type('Proba');
         cy.get('#last-name').type('Jedan');
         cy.get('#email').type('Proba@jedan1.com');
